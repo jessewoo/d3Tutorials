@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!-- https://www.youtube.com/watch?v=2LhoCfjm8R4&t=11972s&ab_channel=freeCodeCamp.org -->
+<!-- Add a svg area, empty -->
+<svg>
+    <g class="chart">
+    </g>
+</svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<script>
+    let myData = [40, 10, 20, 60, 30];
+
+    d3.select('.chart')
+        .selectAll('circle')
+        .data(myData)
+        .join('circle');
+
+    d3.select('.chart')
+        .selectAll('circle')
+        .data(myData)
+        .join('circle')
+        .attr('cx', function (d, i) {
+            return i * 100;
+        })
+        .attr('cy', 50)
+        .attr('r', 40)
+        .style('fill', 'orange');
+
+</script>
