@@ -1,6 +1,6 @@
-import serve from 'rollup-plugin-serve';
-import livereload from 'rollup-plugin-livereload';
-import babel from '@rollup/plugin-babel';
+import serve from '../5-load-data-in-react/node_modules/rollup-plugin-serve/dist/index.cjs';
+import livereload from '../5-load-data-in-react/node_modules/rollup-plugin-livereload';
+import babel from '../5-load-data-in-react/node_modules/@rollup/plugin-babel/types';
 
 // https://www.reddit.com/r/reactjs/comments/k28wof/bundle_your_react_app_with_rollupjs/
 
